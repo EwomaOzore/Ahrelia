@@ -11,7 +11,7 @@ const Reviews = () => {
             comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             author: 'Sarah Dyan',
             company: 'Purple Homes',
-            image: '/Landing Page/Reviews/profile1.png',
+            image: '/Landing Page/Reviews/profile.png',
         },
         {
             id: 2,
@@ -19,7 +19,7 @@ const Reviews = () => {
             comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             author: 'Manny Hugh',
             company: 'Pay limited',
-            image: '/Landing Page/Reviews/profile2.png',
+            image: '/Landing Page/Reviews/profile.png',
         },
     ]);
 

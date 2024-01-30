@@ -8,7 +8,7 @@ import { faEnvelope, faHouseChimneyWindow, faPhone } from '@fortawesome/free-sol
 import contactimage from '@/public/contact.svg'
 import { faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import CustomBox from '@/components/CustomBox';
-import Map from '@/components/map';
+import Map from '@/components/Map';
 
 const contact = () => {
     return (

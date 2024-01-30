@@ -12,7 +12,6 @@ const Map = () => {
                 version: 'weekly'
             });
             const { Map } = await loader.importLibrary('maps');
-            const { Marker } = await loader.importLibrary('marker');
             const position = {
                 lat: 6.4854873,
                 lng: 3.3555328
@@ -22,7 +21,7 @@ const Map = () => {
                 zoom: 17,
                 mapId: 'AHRELIA_MAPID'
             }
-            const map = new Map(mapRef.current, mapOptions);
+            const map = new Map(mapRef.current, mapOptions)
         }
         initMap();
     }, []);
