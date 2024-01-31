@@ -4,6 +4,7 @@ import LatestOpening from '@/components/Careers/LatestOpening'
 import NavBar from '@/components/NavBar'
 import React from 'react'
 import ApplicationForm from '@/components/Careers/ApplicationForm'
+import SemiFooter from '@/components/SemiFooter'
 
 const careers = () => {
     return (
@@ -43,11 +44,12 @@ const careers = () => {
                     <ApplicationForm />
                 </div>
 
-                <div className='flex flex-col p-20 bg-[#D9D9D9] items-center'>
-                    <h1 className='font-bold text-center mb-10'>Have an upcoming project</h1>
-                    <p className='text-center mb-10'>let's work with you (Ahrelia ®) to achieve your goal</p>
-                    <Button destination="/contact" label="CONTACT US" />
-                </div>
+                <SemiFooter
+                    title='Have an upcoming project'
+                    description="let's work with you (Ahrelia ®) to achieve your goal"
+                    buttonDestination='/contact'
+                    buttonLabel='CONTACT US'
+                />
             </div>
 
             <Footer />

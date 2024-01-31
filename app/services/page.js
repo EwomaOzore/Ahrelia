@@ -10,6 +10,7 @@ import Designandarchitecture from '@/public/Landing Page/Services/designandarchi
 import Buildingandimplementing from '@/public/Landing Page/Services/buildingandimplementing.svg'
 import Costmanagement from '@/public/Landing Page/Services/costmanagement.svg'
 import Facilitiesmanagement from '@/public/Landing Page/Services/facilitiesmanagement.svg'
+import SemiFooter from '@/components/SemiFooter'
 
 const services = () => {
     return (
@@ -43,11 +44,12 @@ const services = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col p-20 bg-[#D9D9D9] items-center'>
-                <h1 className='font-bold text-center mb-10'>Cant find what you’re looking for?</h1>
-                <Button destination="/" label="JOIN OUR TEAM" />
-            </div>
-
+            <SemiFooter
+                title='Cant find what your’e looking for?'
+                description=""
+                buttonDestination='/careers'
+                buttonLabel='JOIN OUR TEAM'
+            />
 
             <Footer />
         </>

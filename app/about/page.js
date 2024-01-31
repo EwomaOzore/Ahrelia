@@ -5,7 +5,7 @@ import NavBar from '@/components/NavBar'
 import TeamBox from '@/components/AboutUs/TeamBox'
 import WhyUsBox from '@/components/AboutUs/WhyUsBox'
 import Team from '@/components/AboutUs/Team'
-import Button from '@/components/Button'
+import SemiFooter from '@/components/SemiFooter'
 
 import image from '@/public/AboutPage/about.svg'
 import values from '@/public/AboutPage/values.svg'
@@ -114,10 +114,12 @@ const about = () => {
           </div>
         </div>
 
-        <div className='flex flex-col p-20 bg-[#D9D9D9] items-center'>
-          <h1 className='font-bold text-center mb-10'>Want to be part of our team?</h1>
-          <Button destination="/" label="JOIN OUR TEAM" />
-        </div>
+        <SemiFooter
+          title='Want to be part of our team?'
+          description=""
+          buttonDestination='/careers'
+          buttonLabel='JOIN OUR TEAM'
+        />
 
       </div>
       <Footer />

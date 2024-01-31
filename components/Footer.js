@@ -29,19 +29,19 @@ const Footer = () => {
             <p className="font-bold mt-4 mb-7">SERVICES</p>
             <ul className='flex flex-col'>
               <Link href='/projectmanagement' className='mb-2'>Project management</Link>
-              <Link href='/' className='mb-2'>Design & build</Link>
-              <Link href='/' className='mb-2'>Design & architecture</Link>
-              <Link href='/' className='mb-2'>Build & implementing</Link>
-              <Link href='/' className='mb-2'>Cost management</Link>
-              <Link href='/'>Facilities management</Link>
+              <Link href='/designandbuild' className='mb-2'>Design & build</Link>
+              <Link href='/designandarchitecture' className='mb-2'>Design & architecture</Link>
+              <Link href='/buildandimplementing' className='mb-2'>Build & implementing</Link>
+              <Link href='/costmanagement' className='mb-2'>Cost management</Link>
+              <Link href='/facilitiesmanagement'>Facilities management</Link>
             </ul>
           </div>
 
           <div className='links mr-20'>
             <p className="font-bold mt-4 mb-7">COMPANY</p>
             <ul className='flex flex-col'>
-              <Link href='/' className='mb-2'>Our Team</Link>
-              <Link href='/'>FAQ</Link>
+              <Link href='/ourteam' className='mb-2'>Our Team</Link>
+              <Link href='/faq'>FAQ</Link>
             </ul>
           </div>
 
