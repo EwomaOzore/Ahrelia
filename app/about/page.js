@@ -39,7 +39,7 @@ const about = () => {
       <div className='bg-[#E9E7E7]'>
         <div className='p-20 pb-0 bg-[#D9D9D9]'>
           <div className=' flex p-10 bg-[#E9E7E7]'>
-            <Image src={image} className='w-[40%]' />
+            <Image src={image} alt='about' width='auto' height='auto' className='w-[40%]' />
             <div className='p-10 ml-20'>
               <h1 className='text-center font-bold mb-5'>ABOUT US</h1>
               <p className='leading-10 tracking-widest'>Ahrelia ® is a luxurious design and build company that focus on spectacular opulence for clients. We provide services such as Design & Build (Turnkey), Design & Architecture, Build & Implementation, Cost Management and Facilities Management. Our aim is to provide our clients with high end experience wherever they may be. We focus on very specific clients hence our services are not readily available to the public.</p>
@@ -91,7 +91,7 @@ const about = () => {
 
         <div className='bg-[#D9D9D9] pt-10'>
           <h1 className='text-center font-bold'>OUR VALUES</h1>
-          <Image src={values} />
+          <Image src={values} alt='values' width='auto' height='auto' />
         </div>
 
         <div className='p-20'>

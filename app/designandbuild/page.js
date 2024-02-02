@@ -30,7 +30,7 @@ const page = () => {
 
             <div className='flex p-10 bg-[#E9E7E7]'>
                 <div className='w-[30%]'>
-                    <Image src={dabprocess} className='' />
+                    <Image src={dabprocess} alt='design and build' width='auto' height='auto' />
                 </div>
                 <div className='bg-[#D9D9D9] p-5 w-[70%] ml-10'>
                     <h1 className='text-center mb-10'>OUR PROCESS</h1>

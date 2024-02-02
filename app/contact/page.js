@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHouseChimneyWindow, faPhone } from '@fortawesome/free-solid-svg-icons';
 import contactimage from '@/public/contact.svg'
 import { faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import CustomBox from '@/components/CustomBox';
 import Map from '@/components/Map';
 import Faqs from '@/components/Faqs';
 
@@ -63,7 +62,7 @@ const contact = () => {
                             <p>Sat: 11am - 3pm</p>
                             <p>Sun: Closed</p>
                         </div>
-                        <Image src={contactimage} width={150} className='relative top[5%] left-[58%]' />
+                        <Image src={contactimage} alt='contact' width={150} height='auto' className='relative top[5%] left-[58%]' />
                     </div>
                 </div>
             </div>

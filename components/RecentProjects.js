@@ -8,7 +8,7 @@ const RecentProjects = ({ images }) => {
             <div className="flex justify-center">
                 {images.map((image, index) => (
                     <div key={index} className="transition-transform transform hover:scale-105">
-                        <Image src={image} alt={`Recent Project ${index}`} className="w-[100%]" />
+                        <Image src={image} alt={`Recent Project ${index}`} width='auto' height='auto' className="w-[100%]" />
                     </div>
                 ))}
             </div>

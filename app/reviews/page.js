@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Reviews from '@/components/Reviews'
-import Button from '@/components/Button'
 import SemiFooter from '@/components/SemiFooter'
 
 const reviews = () => {

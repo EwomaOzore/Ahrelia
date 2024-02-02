@@ -19,7 +19,7 @@ const page = () => {
                 title='FACILITIES MANAGEMENT'
                 description1='Whether the space is an office, residential building, hospital, and religion centers, we ensure that the building and all of its components work properly.'
                 description2='We are dedicated to supporting people and businesses, to ensures the functionality, comfort, safety, sustainability, and efficiency of the built environment- the buildings we live and work in and their surrounding infrastructure.
-Whether the space is an office, residential building, hospital, and religion centres, we ensure that the building and all of its components work properly. Ahrelia ® ensures that the systems in the built environment work together as they should, that buildings fulfil their intended purposes, and that personnel are healthy and productive.'
+                    Whether the space is an office, residential building, hospital, and religion centres, we ensure that the building and all of its components work properly. Ahrelia ® ensures that the systems in the built environment work together as they should, that buildings fulfil their intended purposes, and that personnel are healthy and productive.'
                 image1={header}
                 image2={body2}
                 image3={body1}

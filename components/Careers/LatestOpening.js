@@ -18,45 +18,45 @@ const LatestOpening = () => {
                 <h1 className='text-center font-bold'>LATEST OPENINGS</h1>
                 <div className='flex justify-evenly'>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={pm} className='mb-3' />
+                        <Image src={pm} alt='Project Manager' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Project Manager</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={architect} className='mb-3' />
+                        <Image src={architect} alt='Architect' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Architect</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={cm} className='mb-3' />
+                        <Image src={cm} alt='Construction Manager' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Construction Manager</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={hr} className='mb-3' />
+                        <Image src={hr} alt='Human Resource' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Human Resource</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={admin} className='mb-3' />
+                        <Image src={admin} alt='Administration' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Administration</p>
                     </div>
                 </div>
                 <div className='flex justify-evenly'>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={intdesigner} className='mb-3' />
+                        <Image src={intdesigner} alt='Interior Designer' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Interior Designer</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={accofficer} className='mb-3' />
+                        <Image src={accofficer} alt='Account Officer' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Account Officer</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={cs} className='mb-3' />
+                        <Image src={cs} alt='Customer Service' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Customer Service</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={qs} className='mb-3' />
+                        <Image src={qs} alt='Quantity Surveyor' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Quantity Surveyor</p>
                     </div>
                     <div className='flex flex-col p-10 items-center'>
-                        <Image src={sma} className='mb-3' />
+                        <Image src={sma} alt='Social Media Associate' width='auto' height='auto' className='mb-3' />
                         <p className='text-xs'>Social Media Associate</p>
                     </div>
                 </div>

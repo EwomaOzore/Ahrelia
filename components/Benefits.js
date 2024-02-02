@@ -14,7 +14,7 @@ const Benefits = () => {
 
                 <div className="flex mb-40">
                     <div className="block w-[40%] h-96">
-                        <Image src={image} alt="Image 1" />
+                        <Image src={image} alt="Image 1" width='auto' height='auto' />
                     </div>
                     <div className="w-1/2 bg-[#F0EEEE] p-20 rounded-tr-[150px]">
                         <p className="">
@@ -32,7 +32,7 @@ const Benefits = () => {
                         </p>
                     </div>
                     <div className="block w-[40%] h-96">
-                        <Image src={image1} alt="Image 1" />
+                        <Image src={image1} alt="Image 1" width='auto' height='auto' />
                     </div>
                 </div>
             </div>

@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <div className="footer-container flex justify-between bg-black text-[#E9E7E7] p-8 pl-20">
         <div className="brand-info flex flex-col">
-          <Image src={Logo} alt="Company Logo" className="logo w-40 h-20" />
+          <Image src={Logo} alt="Ahrelia" width='auto' height='auto' className="logo w-40 h-20" />
           <div className='description p-4 w-96'>
             <p>You can TRUST us for your next project, engage us and expect a perfect luxurious fit-out design and build that focuses on spectacular opulence for clients.</p>
           </div>

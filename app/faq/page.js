@@ -11,7 +11,7 @@ const page = () => {
         <>
             <NavBar />
 
-            <Image src={Faq} className='bg-[#D9D9D9]' />
+            <Image src={Faq} alt='FAQ' width='auto' height='auto' className='bg-[#D9D9D9]' />
             <Faqs />
 
             <SemiFooter
