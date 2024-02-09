@@ -1,0 +1,67 @@
+@media (max-width: 768px) {
+    .aboutus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .aboutus .image {
+        width: 80%;
+    }
+
+    .aboutus p {
+        letter-spacing: normal;
+        word-spacing: normal;
+    }
+
+    .vision {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .vision hr {
+        display: none;
+    }
+
+    .visiontext {
+        margin: 5px;
+    }
+
+    .howwework {
+        padding: 10px;
+    }
+
+    .team {
+        padding: 10px;
+    }
+
+    .whyus {
+        padding: 10px;
+    }
+
+    .whyusbox {
+        padding: 10px;
+    }
+
+    .whyus h1 {
+        margin-bottom: 5px;
+        margin-top: 25px;
+    }
+
+    .why {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why h1 {
+        width: 400%;
+    }
+
+    .why p {
+        width: 400%;
+    }
+}

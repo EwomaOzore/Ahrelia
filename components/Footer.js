@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Logo from '@/public/LOGO.svg'
 import Link from 'next/link';
+import '@/app/Styles/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
 

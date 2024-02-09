@@ -3,12 +3,15 @@ import Image from 'next/image';
 import Navbar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Button from '@/components/Button'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHouseChimneyWindow, faPhone } from '@fortawesome/free-solid-svg-icons';
-import contactimage from '@/public/contact.svg'
-import { faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import Map from '@/components/Map';
 import Faqs from '@/components/Faqs';
+import contactimage from '@/public/contact.svg'
+
+import './contact.css'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faHouseChimneyWindow, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const contact = () => {
     return (
@@ -17,8 +20,8 @@ const contact = () => {
 
             <div className='bg-[#E9E7E7] p-10'>
                 <h1 className='font-bold mb-10'>Get In Touch</h1>
-                <div className='flex justify-center'>
-                    <div className='w-[30%] p-8 bg-[#D9D9D9]'>
+                <div className='contact flex justify-center'>
+                    <div className='contactform w-[30%] p-8 bg-[#D9D9D9]'>
                         <h2 className='text-2xl font-bold mb-4'>Send a Message</h2>
                         <form>
                             <div className='mb-4'>
@@ -39,7 +42,7 @@ const contact = () => {
                             </div>
                         </form>
                     </div>
-                    <div className='w-[30%] p-8 bg-gray-100'>
+                    <div className='contactinfo w-[30%] p-8 bg-gray-100'>
                         <h2 className='text-2xl font-bold mb-4'>Contact Info</h2>
                         <div className='mb-4 flex items-center'>
                             <FontAwesomeIcon icon={faHouseChimneyWindow} className='mr-10' />

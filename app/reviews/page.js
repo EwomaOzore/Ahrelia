@@ -3,16 +3,17 @@ import Navbar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Reviews from '@/components/Reviews'
 import SemiFooter from '@/components/SemiFooter'
+import '@/app/Styles/Reviews.css'
 
 const reviews = () => {
     return (
         <>
             <Navbar />
 
-            <div className='p-20 items-center'>
+            <div className='reviewsection p-20 items-center'>
                 <h1 className='font-bold text-center mb-2'>REVIEWS</h1>
                 <p className='text-center mb-10'>What our clients say about us.</p>
-                <div className='flex space-x-20 justify-between'>
+                <div className='reviews flex justify-evenly'>
                     <Reviews />
                 </div>
             </div>

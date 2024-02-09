@@ -1,12 +1,13 @@
 import React from 'react';
+import '@/app/careers/careers.css'
 
 const ApplicationForm = () => {
     return (
         <>
-            <div className='bg-[#D9D9D9] p-10'>
+            <div className='form bg-[#D9D9D9] p-10'>
                 <h1 className='text-center font-bold'>APPLICATION</h1>
 
-                <form className=' px-44 mx-auto'>
+                <form className='px-44 mx-auto'>
                     {/* First Name and Last Name */}
                     <div className='flex space-x-4 mb-4'>
                         <div className='w-1/2'>

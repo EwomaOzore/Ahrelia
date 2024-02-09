@@ -3,6 +3,8 @@ import Navbar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Button from '@/components/Button'
 import Service from '@/components/Services'
+import SemiFooter from '@/components/SemiFooter'
+import '@/app/services/services.css'
 
 import Projectmanagement from '@/public/Landing Page/Services/projectmanagement.svg'
 import Designandbuild from '@/public/Landing Page/Services/designandbuild.svg'
@@ -10,15 +12,14 @@ import Designandarchitecture from '@/public/Landing Page/Services/designandarchi
 import Buildingandimplementing from '@/public/Landing Page/Services/buildingandimplementing.svg'
 import Costmanagement from '@/public/Landing Page/Services/costmanagement.svg'
 import Facilitiesmanagement from '@/public/Landing Page/Services/facilitiesmanagement.svg'
-import SemiFooter from '@/components/SemiFooter'
 
 const services = () => {
     return (
         <>
             <Navbar />
 
-            <div className='p-20 bg-[#D9D9D9]'>
-                <div className="flex">
+            <div className='services p-20 bg-[#D9D9D9]'>
+                <div className=" services flex">
                     <hr className="border-t-2 border-black flex-grow-[0.4] mr-4 mt-[25px]" />
                     <div className='flex flex-col ml-[8%]'>
                         <p className="font-bold mb-2">Professional Project <br /> Management</p>
@@ -28,7 +29,7 @@ const services = () => {
                             dolore magna aliqua</p>
                     </div>
                 </div>
-                <div className='flex flex-col p-20 items-center'>
+                <div className='services flex flex-col p-20 items-center'>
                     <Button destination="/" label="Read more" />
                 </div>
             </div>

@@ -1,10 +1,11 @@
 import React from 'react'
 import CustomBox from './CustomBox'
+import '@/app/Styles/Faqs.css'
 
 const Faqs = () => {
     return (
         <>
-            <div className='bg-[#D9D9D9] p-10'>
+            <div className='faqs bg-[#D9D9D9] p-10'>
                 <h1 className='font-bold mb-10'>Frequently Asked Questions</h1>
                 <div className='flex justify-evenly mb-10'>
                     <CustomBox title='HOW DO I ENGAGE AHRELIA' description='Please visit our website and click on the Contact tab, fill in with the required information. We will revert within 72Hrs.' backgroundColor='#000' textColor='#FFF' />

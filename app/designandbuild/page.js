@@ -1,10 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
+
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import OurProcessItem from '@/components/OurProcessItem'
 import ServicePages from '@/components/ServicePages'
 import SemiFooter from '@/components/SemiFooter'
+
+import '@/app/projectmanagement/projectmanagement.css'
+
 import dab from '@/public/DesignAndBuild/dab.svg'
 import dab1 from '@/public/DesignAndBuild/dab1.svg'
 import dab2 from '@/public/DesignAndBuild/dab2.svg'
@@ -28,13 +32,13 @@ const page = () => {
                 image3={dab1}
             />
 
-            <div className='flex p-10 bg-[#E9E7E7]'>
-                <div className='w-[30%]'>
+            <div className='pm flex p-10 bg-[#E9E7E7]'>
+                <div className='image w-[30%]'>
                     <Image src={dabprocess} alt='design and build' width='auto' height='auto' />
                 </div>
-                <div className='bg-[#D9D9D9] p-5 w-[70%] ml-10'>
+                <div className='process bg-[#D9D9D9] p-5 w-[70%] ml-10'>
                     <h1 className='text-center mb-10'>OUR PROCESS</h1>
-                    <div className='flex justify-evenly'>
+                    <div className='processitem flex justify-evenly'>
                         <OurProcessItem stepImage={consultation}
                             heading='CONSULTATION'
                             description='An obligation free phone or face-to-face consultation to gauge your requirements in terms of space usage , time frame, budget and desired design.'

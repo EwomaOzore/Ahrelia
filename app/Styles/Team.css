@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .team h1 {
+        font-size: 10px;
+    }
+
+    .team p {
+        font-size: 10px;
+    }
+}

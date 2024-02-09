@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .ourprocess .image {
+        margin-bottom: 5px;
+    }
+
+    .ourprocess h1 {
+        margin-bottom: 5px;
+    }
+
+    .ourprocess p {
+        margin-bottom: 5px;
+    }
+}

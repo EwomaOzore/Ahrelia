@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 const Reviews = () => {
     const [reviews, setReviews] = useState([
@@ -34,13 +36,13 @@ const Reviews = () => {
     return (
         <>
             {reviews.map((review) => (
-                <div key={review.id} className='flex w-[48%] mb-5 justify-between'>
+                <div key={review.id} className='reviewbox flex w-[40%] mb-5 justify-between'>
                     <div className='bg-white p-10 text-center rounded-lg shadow-md'>
-                        <p className='text-[100px] font-bold'>“</p>
+                        <FontAwesomeIcon icon={faQuoteLeft} size="2xl" className='mb-5 text-[60px]' />
                         <p className='text-xl font-semibold mb-4'>{review.text}</p>
                         <p className='text-gray-600'>{review.comment}</p>
                         <div className='flex flex-col items-center gap-3 mt-5'>
-                            <Image src={review.image} alt='Author' width={100} height={100} className='rounded-full' />
+                            <Image src={review.image} alt='Author' width={100} height={100} className='image rounded-full' />
                             <p className='text-gray-800 font-bold'>{review.author}</p>
                             <p className='text-gray-800 font-bold'>{review.company}</p>
                         </div>

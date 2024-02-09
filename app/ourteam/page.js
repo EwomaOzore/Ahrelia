@@ -3,6 +3,9 @@ import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import SemiFooter from '@/components/SemiFooter'
 import Team from '@/components/AboutUs/Team'
+
+import './ourteam.css'
+
 import oladusin from '@/public/AboutPage/Team/oladisun.png'
 import wale from '@/public/AboutPage/Team/wale.png'
 import deborah from '@/public/AboutPage/Team/deborah.png'
@@ -18,7 +21,7 @@ const page = () => {
         <>
             <NavBar />
 
-            <div className='p-20 bg-[#F0EEEE]'>
+            <div className='ourteam p-20 bg-[#F0EEEE]'>
                 <h1 className='font-bold text-center mb-10'>MEET OUR TEAM</h1>
                 <p className='text-center mb-44'>At Ahrelia ®, we do not compete for jobs, but we compete for people. Our people are our brand.</p>
                 <div className='flex justify-evenly mb-32'>

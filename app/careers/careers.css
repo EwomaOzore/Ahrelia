@@ -1,0 +1,40 @@
+@media (max-width: 768px) {
+    .careers {
+        padding: 10px;
+        padding-top: 30px;
+    }
+
+    .careers hr {
+        display: none;
+    }
+
+    .latestopenings {
+        flex-direction: column;
+    }
+
+    .openings {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+        margin-bottom: 25px;
+    }
+
+    .lateopen {
+        width: 100%;
+    }
+
+
+    .box {
+        padding: 3px;
+    }
+
+    .req {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form form {
+        padding: 0;
+    }
+}

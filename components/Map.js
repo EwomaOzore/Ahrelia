@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react'
 import { Loader } from '@googlemaps/js-api-loader';
+import '@/app/Styles/Faqs.css'
 
 const Map = () => {
     const mapRef = React.useRef(null);
@@ -27,7 +28,7 @@ const Map = () => {
     }, []);
 
     return (
-        <div style={{ height: '500px', }} ref={mapRef} />
+        <div style={{ height: '500px', }} ref={mapRef} className='maps' />
     )
 }
 

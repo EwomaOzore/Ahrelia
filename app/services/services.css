@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .services {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .services hr {
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    .teambox {
+        width: 30%;
+    }
+
+    .teambox h1 {
+        font-size: 10px;
+    }
+
+    .teambox p {
+        font-size: 7px;
+    }
+}

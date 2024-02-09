@@ -1,4 +1,5 @@
 import React from 'react';
+import '@/app/Styles/Faqs.css'
 
 const CustomBox = ({ title, description, backgroundColor, textColor }) => {
     const boxStyle = {
@@ -7,7 +8,7 @@ const CustomBox = ({ title, description, backgroundColor, textColor }) => {
     };
 
     return (
-        <div className='flex flex-col w-[30%] items-center text-center p-8 rounded shadow-md' style={boxStyle}>
+        <div className='custombox flex flex-col w-[30%] items-center text-center p-8 rounded shadow-md' style={boxStyle}>
             <h1 className='text-2xl font-bold mb-5'>{title}</h1>
             <p>{description}</p>
         </div>

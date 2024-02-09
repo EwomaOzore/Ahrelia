@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .faqs {
+        padding: 5px;
+        padding-bottom: 40px;
+    }
+
+    .faqs h1 {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .faqs p {
+        font-size: 7px;
+    }
+
+    .custombox {
+        padding: 5px;
+    }
+
+    .maps {
+        max-height: 40%;
+    }
+}

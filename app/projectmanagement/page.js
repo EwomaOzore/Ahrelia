@@ -1,10 +1,14 @@
 import React from 'react'
-import Footer from '@/components/Footer'
 import Image from 'next/image'
+
+import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import SemiFooter from '@/components/SemiFooter'
 import ServicePages from '@/components/ServicePages'
 import OurProcessItem from '@/components/OurProcessItem'
+
+import '@/app/projectmanagement/projectmanagement.css'
+
 import image from '@/public/ProjectManagement/pmheader.svg'
 import pm1 from '@/public/ProjectManagement/pm1.svg'
 import pm2 from '@/public/ProjectManagement/pm2.svg'
@@ -31,13 +35,13 @@ const page = () => {
                 image3={pm1}
             />
 
-            <div className='flex p-10 bg-[#E9E7E7]'>
-                <div className='w-[30%]'>
+            <div className='pm flex p-10 bg-[#E9E7E7]'>
+                <div className=' image w-[30%]'>
                     <Image src={pmprocess} alt='project management' width='auto' height='auto' />
                 </div>
-                <div className='bg-[#D9D9D9] p-5 w-[70%] ml-10'>
+                <div className='process bg-[#D9D9D9] p-5 w-[70%] ml-10'>
                     <h1 className='text-center mb-10'>OUR PROCESS</h1>
-                    <div className='flex'>
+                    <div className='processitem flex'>
                         <OurProcessItem stepImage={development}
                             heading='DEVELOPMENT'
                             description='Project Development and Objective-Organisation with Client'

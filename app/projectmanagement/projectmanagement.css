@@ -1,0 +1,24 @@
+@media (max-width: 768px) {
+    .pm {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .pm .image {
+        width: 70%;
+    }
+
+    .process {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .processitem {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -5,6 +5,9 @@ import NavBar from '@/components/NavBar'
 import OurProcessItem from '@/components/OurProcessItem'
 import ServicePages from '@/components/ServicePages'
 import SemiFooter from '@/components/SemiFooter'
+
+import '@/app/projectmanagement/projectmanagement.css'
+
 import daa from '@/public/DesignAndArchitecture/daa.svg'
 import daa1 from '@/public/DesignAndArchitecture/daa1.svg'
 import daa2 from '@/public/DesignAndArchitecture/daa2.svg'
@@ -28,13 +31,13 @@ const page = () => {
                 image3={daa1}
             />
 
-            <div className='flex p-10 bg-[#E9E7E7]'>
-                <div className='w-[30%]'>
+            <div className='pm flex p-10 bg-[#E9E7E7]'>
+                <div className='image w-[30%]'>
                     <Image src={daaprocess} alt='design and architecture' width='auto' height='auto' />
                 </div>
-                <div className='bg-[#D9D9D9] p-5 w-[70%] ml-10'>
+                <div className='process bg-[#D9D9D9] p-5 w-[70%] ml-10'>
                     <h1 className='text-center mb-10'>OUR PROCESS</h1>
-                    <div className='flex justify-evenly'>
+                    <div className='processitem flex justify-evenly'>
                         <OurProcessItem stepImage={conceptualisation}
                             heading='CONCEPTUALISATION'
                             description='In-depth Analysis and study of the Project zoning . Organize proposed spaces to achieve a functional design.Providing our clients with first ideas or concepts.Presenting blueprints and modifiable solutions to our clients'

@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .reviewsection {
+        padding: 30px;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .reviewbox {
+        width: 100%;
+    }
+
+    .reviewbox p {
+        font-size: 10px;
+    }
+
+    .reviewbox .image {
+        width: 20%;
+    }
+}

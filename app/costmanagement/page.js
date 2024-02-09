@@ -5,6 +5,9 @@ import NavBar from '@/components/NavBar'
 import OurProcessItem from '@/components/OurProcessItem'
 import ServicePages from '@/components/ServicePages'
 import SemiFooter from '@/components/SemiFooter'
+
+import '@/app/projectmanagement/projectmanagement.css'
+
 import header from '@/public/CostManagement/header.svg'
 import body1 from '@/public/CostManagement/body1.svg'
 import body2 from '@/public/CostManagement/body2.svg'
@@ -27,13 +30,13 @@ const page = () => {
                 image3={body1}
             />
 
-            <div className='flex p-10 bg-[#E9E7E7]'>
-                <div className='w-[30%]'>
+            <div className='pm flex p-10 bg-[#E9E7E7]'>
+                <div className='image w-[30%]'>
                     <Image src={processimage} alt='cost management' width='auto' height='auto' />
                 </div>
-                <div className='bg-[#D9D9D9] p-5 w-[70%] ml-10'>
+                <div className='process bg-[#D9D9D9] p-5 w-[70%] ml-10'>
                     <h1 className='text-center mb-10'>OUR STAGES</h1>
-                    <div className='flex justify-evenly'>
+                    <div className='processitem flex justify-evenly'>
                         <OurProcessItem stepImage={preconstruction}
                             heading='PRE CONSTRUCTION'
                             description='Feasibility and Viability studies.

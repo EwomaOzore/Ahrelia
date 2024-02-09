@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    .whyusbox {
+        margin: 0;
+    }
+
+    .whyusbox .image {
+        margin: 5px;
+    }
+
+    .whyusbox h1 {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .whyusbox p {
+        font-size: 10px;
+    }
+}

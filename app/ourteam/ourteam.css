@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+    .ourteam {
+        padding: 0;
+    }
+
+    .ourteam h1 {
+        padding: 20px;
+    }
+}
