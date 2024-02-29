@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Navbar from '@/components/NavBar'
 import Footer from '@/components/Footer'
 import Button from '@/components/Button'
@@ -6,6 +7,7 @@ import Service from '@/components/Services'
 import SemiFooter from '@/components/SemiFooter'
 import '@/app/services/services.css'
 
+import service from '@/public/Landing Page/Services/service.svg'
 import Projectmanagement from '@/public/Landing Page/Services/projectmanagement.svg'
 import Designandbuild from '@/public/Landing Page/Services/designandbuild.svg'
 import Designandarchitecture from '@/public/Landing Page/Services/designandarchitecture.svg'
@@ -18,7 +20,7 @@ const services = () => {
         <>
             <Navbar />
 
-            <div className='services p-20 bg-[#D9D9D9]'>
+            <div className='services p-10 bg-[#D9D9D9]'>
                 <div className=" services flex">
                     <hr className="border-t-2 border-black flex-grow-[0.4] mr-4 mt-[25px]" />
                     <div className='flex flex-col ml-[8%]'>
@@ -29,13 +31,14 @@ const services = () => {
                             dolore magna aliqua</p>
                     </div>
                 </div>
-                <div className='services flex flex-col p-20 items-center'>
+                <div className='services flex flex-col py-5 items-center'>
                     <Button destination="/" label="Read more" />
                 </div>
+                <Image src={service} alt='service' width='100%' height='70%' />
             </div>
             <div className='bg-white pt-5'>
                 <h1 className='font-bold text-center'>what we do</h1>
-                <div className="flex flex-wrap p-8 text-white justify-center">
+                <div className="flex flex-wrap p-8 text-white justify-between">
                     <Service image={Projectmanagement} title="PROJECT MANAGEMENT" link="/project-management" />
                     <Service image={Designandbuild} title="DESIGN & BUILD" link="/design-and-build" />
                     <Service image={Designandarchitecture} title="DESIGN & ARCHITECTURE" link="/design-and-architecture" />

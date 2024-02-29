@@ -51,7 +51,7 @@ const about = () => {
           </div>
         </div>
 
-        <div className="vision flex items-center mb-20 p-20">
+        <div className="vision flex items-center px-20">
           <hr className="border-t-2 border-black flex-grow-[0.4] mr-4" />
           <div className='visiontext flex flex-col ml-[8%]'>
             <p className="text-center font-bold mb-2">OUR VISION</p>
@@ -59,7 +59,7 @@ const about = () => {
           </div>
         </div>
 
-        <div className="vision flex justify-end mb-4 p-20">
+        <div className="vision flex justify-end mb-4 px-20 py-10">
           <div className='visiontext flex flex-col mr-[8%]'>
             <p className="text-center font-bold mb-2">HOW WE WORK</p>
             <p className='text-center'>We adopt and hybrid methodology to how we work as we understand each project is unique. Our experience, <br />
@@ -70,7 +70,7 @@ const about = () => {
           <hr className="border-t-2 border-black flex-grow-[0.4] mr-4" />
         </div>
 
-        <div className='team flex p-20 pt-0 justify-evenly'>
+        <div className='team flex px-20 pt-0 justify-evenly'>
           <TeamBox imageSrc={team} title='10+' description='Team Members' />
           <TeamBox imageSrc={client} title='11+' description='Clients' />
           <TeamBox imageSrc={countries} title='3' description='Countries' />

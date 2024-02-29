@@ -5,13 +5,14 @@ import Link from 'next/link';
 import '@/app/Styles/Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
     <>
       <div className="footer-container flex justify-between bg-black text-[#E9E7E7] p-8 pl-20">
         <div className="brand-info flex flex-col">
-          <Image src={Logo} alt="Ahrelia" width='auto' height='auto' className="logo w-40 h-20" />
+          <Image src={Logo} alt="Ahrelia" width='auto' height='auto' priority className="logo w-40 h-20" />
           <div className='description p-4 w-96'>
             <p>You can TRUST us for your next project, engage us and expect a perfect luxurious fit-out design and build that focuses on spectacular opulence for clients.</p>
           </div>
@@ -72,6 +73,9 @@ const Footer = () => {
           </Link>
           <Link href='/'>
             <FontAwesomeIcon icon={faYoutube} className='w-5 h-5' />
+          </Link>
+          <Link href='/admin/login'>
+            <FontAwesomeIcon icon={faUser} className='w-5 h-5' />
           </Link>
         </div>
       </div>

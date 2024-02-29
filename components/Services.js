@@ -5,7 +5,7 @@ import '@/app/Styles/Services.css'
 
 const Service = ({ image, title, link }) => {
     return (
-        <div className="service relative mb-8 ml-10 md:w-[1/3] lg:w-1/4">
+        <div className="service relative mb-8 ml-6 w-[60%] md:w-[1/3] lg:w-1/4">
             <Link href={link} passHref>
                 <div className="relative overflow-hidden rounded-lg transition-transform transform hover:scale-105">
                     <Image src={image} alt={title} className="w-full h-auto" />

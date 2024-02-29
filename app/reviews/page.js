@@ -10,10 +10,10 @@ const reviews = () => {
         <>
             <Navbar />
 
-            <div className='reviewsection p-20 items-center'>
+            <div className='reviewsection p-20 items-center bg-[#D9D9D9]'>
                 <h1 className='font-bold text-center mb-2'>REVIEWS</h1>
                 <p className='text-center mb-10'>What our clients say about us.</p>
-                <div className='reviews flex justify-evenly'>
+                <div className='reviews justify-evenly'>
                     <Reviews />
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '@/components/NavBar';
+import NavBar from '@/components/NavBar';
 import HeroSection from '@/components/HeroSection';
 import Projects from '@/components/Projects';
 import Service from '@/components/Services';
@@ -18,21 +18,10 @@ import Buildingandimplementing from '@/public/Landing Page/Services/buildingandi
 import Costmanagement from '@/public/Landing Page/Services/costmanagement.svg'
 import Facilitiesmanagement from '@/public/Landing Page/Services/facilitiesmanagement.svg'
 
-import Project1 from '@/public/Landing Page/RecentProjects/image1.png';
-import Project2 from '@/public/Landing Page/RecentProjects/image2.png';
-import Project3 from '@/public/Landing Page/RecentProjects/image3.png';
-import Project4 from '@/public/Landing Page/RecentProjects/image4.png';
-import Project5 from '@/public/Landing Page/RecentProjects/image5.png';
-import Project6 from '@/public/Landing Page/RecentProjects/image6.png';
-import Project7 from '@/public/Landing Page/RecentProjects/image7.png';
-import Project8 from '@/public/Landing Page/RecentProjects/image8.png';
-
 const Page = () => {
-  const recentProjectsImages = [Project1, Project2, Project3, Project4, Project5, Project6, Project7, Project8];
-
   return (
     <>
-      <Header />
+      <NavBar />
 
       <HeroSection />
 
@@ -41,8 +30,8 @@ const Page = () => {
       </div>
 
       <div>
-        <h1 className='text-black text-center font-bold pt-10'>OUR SERVICES</h1>
-        <div className="flex flex-wrap p-5 text-white justify-center">
+        <h1 className='text-black text-center font-bold text-[30px] pt-10'>OUR SERVICES</h1>
+        <div className="flex flex-wrap p-5 text-white justify-evenly">
           <Service image={Projectmanagement} title="PROJECT MANAGEMENT" link="/projectmanagement" />
           <Service image={Designandbuild} title="DESIGN & BUILD" link="/designandbuild" />
           <Service image={Designandarchitecture} title="DESIGN & ARCHITECTURE" link="/designandarchitecture" />
@@ -52,13 +41,13 @@ const Page = () => {
         </div>
       </div>
 
-      <RecentProjects images={recentProjectsImages} />
+      <RecentProjects />
 
       <Benefits />
 
       <div className='reviewsection p-14 bg-[#D9D9D9]'>
         <h1 className='text-black text-center mb-5 font-bold pt-10'>REVIEWS</h1>
-        <div className='reviews flex justify-evenly'>
+        <div className='reviews justify-evenly'>
           <Reviews />
         </div>
       </div>
