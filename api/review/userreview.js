@@ -8,7 +8,7 @@ exports.addUserReview = async (req, res, next) => {
             //review,
         })
     } catch (error) {
-        console.log(error)
+        // console.log(error)
         res.status(500).json({
             message: "An error occurred",
             error: error.message,

@@ -29,7 +29,7 @@ const RegisterPage = () => {
     const handleRegister = async () => {
         try {
             if (password !== confirmPassword) {
-                console.error('Passwords do not match');
+                // console.error('Passwords do not match');
                 return;
             }
 
@@ -39,13 +39,13 @@ const RegisterPage = () => {
             });
 
             if (response.status === 201) {
-                console.log('User registered successfully');
+                // console.log('User registered successfully');
                 router.push('/admin/login');
             } else {
-                console.error('Registration failed:', response.statusText);
+                // console.error('Registration failed:', response.statusText);
             }
         } catch (error) {
-            console.error('Error during registration:', error.message);
+            // console.error('Error during registration:', error.message);
         }
     };
 

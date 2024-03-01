@@ -33,10 +33,10 @@ const Page = () => {
                 setIsAuthenticated(true);
                 router.push('/admin');
             } else {
-                console.error('Login failed:', response.statusText);
+                // console.error('Login failed:', response.statusText);
             }
         } catch (error) {
-            console.error('Error during login:', error.message);
+            // console.error('Error during login:', error.message);
         }
     };
 

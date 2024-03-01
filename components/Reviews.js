@@ -25,15 +25,15 @@ const Reviews = () => {
         fetch('http://127.0.0.1:5000/api/review/all')
             .then((response) => response.json())
             .then((data) => {
-                console.log('Received data:', data);
+                // console.log('Received data:', data);
 
                 if (Array.isArray(data.review)) {
                     setReviews(data.review);
                 } else {
-                    console.error('Invalid data structure. Expected an array of reviews.');
+                    // console.error('Invalid data structure. Expected an array of reviews.');
                 }
             })
-            .catch((error) => console.error('Error fetching reviews:', error));
+        // .catch((error) => console.error('Error fetching reviews:', error));
     };
 
     return (

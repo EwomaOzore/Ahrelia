@@ -56,13 +56,13 @@ const ReviewForm = () => {
             });
 
             if (response.ok) {
-                console.log('Review data submitted successfully');
+                // console.log('Review data submitted successfully');
                 setReviewData(initialReviewState);
             } else {
-                console.error('Failed to submit review data:', response.statusText);
+                // console.error('Failed to submit review data:', response.statusText);
             }
         } catch (error) {
-            console.error('Error submitting review data:', error.message);
+            // console.error('Error submitting review data:', error.message);
         }
     };
 
