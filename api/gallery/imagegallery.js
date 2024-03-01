@@ -1,15 +1,18 @@
-const Image = require("../model/gallery")
-const cloudinary = require('cloudinary');
+require('dotenv').config();
 
-CLOUD_NAME = "dp7niullu"
-CLOUD_API_KEY = "947826175568299"
-CLOUD_API_SECRET = "4gbmr2te7Fr08sDYHc5zos-A1Ng"
+const CLOUD_NAME = process.env.CLOUD_NAME;
+const CLOUD_API_KEY = process.env.CLOUD_API_KEY;
+const CLOUD_API_SECRET = process.env.CLOUD_API_SECRET;
+
+const { Error } = require("mongoose");
+const Image = require("../model/gallery");
+const cloudinary = require('cloudinary');
 
 cloudinary.config({
     cloud_name: CLOUD_NAME,
     api_key: CLOUD_API_KEY,
     api_secret: CLOUD_API_SECRET,
-})
+});
 
 exports.addImage = async (req, res, next) => {
     const { image } = req.body
