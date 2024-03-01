@@ -10,6 +10,7 @@ import Button from '@/components/Button';
 import Footer from '@/components/Footer';
 
 import '@/app/Styles/Reviews.css'
+import '@/app/globals.css'
 
 import Projectmanagement from '@/public/Landing Page/Services/projectmanagement.svg'
 import Designandbuild from '@/public/Landing Page/Services/designandbuild.svg'

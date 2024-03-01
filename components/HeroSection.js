@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from 'react';
+import '@/app/globals.css'
 
 const HeroSection = () => {
     const [videoUrl, setVideoUrl] = useState('');
@@ -25,7 +26,7 @@ const HeroSection = () => {
 
     return (
         <>
-            <div autoPlay loop className="relative h-[650px] bg-cover bg-center flex items-center justify-center">
+            <div autoPlay loop className="herotext relative h-[650px] bg-cover bg-center flex items-center justify-center">
                 {videoUrl && (
                     <video
                         src={videoUrl}
@@ -35,8 +36,8 @@ const HeroSection = () => {
                     />
                 )}
                 <div className="text-black text-center">
-                    <h1 className="text-4xl font-bold">WELCOME TO AHRELIA</h1>
-                    <h3 className="text-2xl">The luxurious fit-out company</h3>
+                    <h1 className="text-[70px] font-bold">WELCOME TO AHRELIA</h1>
+                    <h3 className="text-3xl mb-4">The luxurious fit-out company</h3>
                     <p className="text-lg">
                         “We inspire a life full of possibilities, offering experiences and memories never to be forgotten.”
                     </p>
