@@ -45,7 +45,7 @@ const ReviewsSection = () => {
             <h2 className="text-2xl font-semibold mb-4">Manage Reviews</h2>
             <div className='flex flex-wrap'>
                 {reviews.map((review) => (
-                    <div className="relative w-[30%] mr-10 mb-5">
+                    <div key={review._id} className="relative w-[30%] mr-10 mb-5">
                         <div key={review._id} className="flex flex-col items-center text-center justify-between bg-white w-[100%] p-4 rounded-xl">
                             <FontAwesomeIcon icon={faQuoteLeft} size="2xl" className='mb-5 text-[60px]' />
                             {/* <p className='text-xl font-semibold mb-4'>{review.header}</p> */}
@@ -53,8 +53,8 @@ const ReviewsSection = () => {
                             <p className='text-gray-600'>{review.comment}</p>
                             <div className='flex flex-col items-center gap-3 mt-5 mb-5'>
                                 <CldImage
-                                    width="400"
-                                    height="300"
+                                    width="50"
+                                    height="50"
                                     src={review.image}
                                     sizes="100vw"
                                     alt="Description of my image"
