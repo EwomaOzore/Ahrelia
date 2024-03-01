@@ -9,10 +9,6 @@ const ReviewSchema = new Mongoose.Schema({
         type: String,
         required: true,
     },
-    image: {
-        type: String,
-        required: false,
-    },
     author: {
         type: String,
         required: true,

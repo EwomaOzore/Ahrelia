@@ -1,7 +1,6 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { CldImage } from 'next-cloudinary';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -52,13 +51,6 @@ const ReviewsSection = () => {
                             <p className='text-xl font-semibold mb-4'>{review.text}</p>
                             <p className='text-gray-600'>{review.comment}</p>
                             <div className='flex flex-col items-center gap-3 mt-5 mb-5'>
-                                <CldImage
-                                    width="50"
-                                    height="50"
-                                    src={review.image}
-                                    sizes="100vw"
-                                    alt="Description of my image"
-                                />
                                 <p className='text-gray-800 font-bold'>{review.author}</p>
                                 <p className='text-gray-800 font-bold'>{review.company}</p>
                             </div>

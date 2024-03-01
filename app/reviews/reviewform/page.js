@@ -101,20 +101,6 @@ const ReviewForm = () => {
                         ></textarea>
                     </div>
                     <div className="mb-4">
-                        <label htmlFor="image" className="block text-sm font-medium text-gray-600">
-                            Image URL
-                        </label>
-                        <input
-                            type="file"
-                            id="uploadImage"
-                            name="image"
-                            value={reviewData.image}
-                            onChange={handleInputChange}
-                            className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
-                            required
-                        />
-                    </div>
-                    <div className="mb-4">
                         <label htmlFor="author" className="block text-sm font-medium text-gray-600">
                             Author
                         </label>

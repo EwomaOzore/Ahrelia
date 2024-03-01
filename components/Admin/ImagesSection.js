@@ -98,8 +98,8 @@ const ImagesSection = () => {
             {images.map((image) => (
                 <div key={image.id} className="flex items-center justify-between bg-white p-4 mb-4 rounded-md">
                     <CldImage
-                        width="960"
-                        height="600"
+                        width="200"
+                        height="200"
                         src={image.image}
                         sizes="100vw"
                         alt="Description of my image"
@@ -122,7 +122,7 @@ const ImagesSection = () => {
                     type="file"
                     id="uploadImage"
                     name="image"
-                    value={imageData.image}
+                    value={reviewData.image}
                     onChange={handleInputChange}
                     className="mt-1 p-2 w-full border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
                     required

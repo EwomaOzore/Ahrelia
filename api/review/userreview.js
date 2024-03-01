@@ -1,34 +1,8 @@
-require('dotenv').config();
-
-const CLOUD_NAME = process.env.CLOUD_NAME;
-const CLOUD_API_KEY = process.env.CLOUD_API_KEY;
-const CLOUD_API_SECRET = process.env.CLOUD_API_SECRET;
-
-const { Error } = require("mongoose");
 const Review = require("../model/review")
-const cloudinary = require('cloudinary');
-
-cloudinary.config({
-    cloud_name: CLOUD_NAME,
-    api_key: CLOUD_API_KEY,
-    api_secret: CLOUD_API_SECRET,
-});
 
 exports.addUserReview = async (req, res, next) => {
-    const { header, comment, image, author, company } = req.body
+    const { header, comment, author, company } = req.body
     try {
-        cloudinary.v2.uploader.upload(image, { overwrite: true, invalidate: true, resource_type: "auto", folder: 'ahrelia' }, async (error, file) => {
-            console.log(file.secure_url)
-            await Review.create({
-                header,
-                comment,
-                image: file.secure_url,
-                author,
-                company
-            }).then(review =>
-                console.log(review)
-            )
-        })
         res.status(200).json({
             message: "Review successfully created",
             //review,
@@ -40,12 +14,6 @@ exports.addUserReview = async (req, res, next) => {
             error: error.message,
         })
     }
-}
-
-function uploadImage(image) {
-    cloudinary.v2.uploader.upload('data:image/jpeg;base64,' + image, { overwrite: true, invalidate: true, resource_type: "auto", folder: 'ahrelia' }, (error, file) => {
-        console.log(file)
-    })
 }
 
 exports.getAllUserReviews = async (req, res, next) => {
@@ -93,7 +61,7 @@ exports.updateReview = async (req, res, next) => {
     try {
         const review = await Review.findByIdAndUpdate(
             reviewId,
-            { header, comment, image, author, company },
+            { header, comment, author, company },
             { new: true }
         );
 
@@ -138,4 +106,3 @@ exports.deleteReview = async (req, res, next) => {
         });
     }
 };
-
