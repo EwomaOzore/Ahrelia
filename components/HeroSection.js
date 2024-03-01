@@ -35,7 +35,7 @@ const HeroSection = () => {
                         className='absolute -z-10 w-full h-full object-cover'
                     />
                 )}
-                <div className="text-black text-center">
+                <div className="hero-text text-black text-center">
                     <h1 className="text-[70px] font-bold">WELCOME TO AHRELIA</h1>
                     <h3 className="text-3xl mb-4">The luxurious fit-out company</h3>
                     <p className="text-lg">
